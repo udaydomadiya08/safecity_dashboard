@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeCity Dashboard - Prototype</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>SafeCity Dashboard</h1>
+    <p>Interactive safety insights for citizens</p>
+  </header>
+  <main class="container">
+    <section class="left">
+      <div id="map" style="height: 420px;"></div>
+      <div class="controls">
+        <label>Filter by category:
+          <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="Crime">Crime</option>
+            <option value="Accident">Accident</option>
+            <option value="Complaint">Complaint</option>
+          </select>
+        </label>
+        <label>Severity cutoff:
+          <input type="range" id="severityRange" min="1" max="5" value="1">
+          <span id="sevVal">1</span>
+        </label>
+      </div>
+    </section>
+    <section class="right">
+      <h2>Trends</h2>
+      <div style="height:220px"><canvas id="trendChart"></canvas></div>
+      <h2>Recent Complaints</h2>
+      <ul id="complaintsList"></ul>
+    </section>
+  </main>
+  <footer class="footer">Prototype for Hackathon - SafeCity Dashboard</footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
