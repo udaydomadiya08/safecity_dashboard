@@ -6,7 +6,12 @@ Unzip and cd into the project folder.
 
     python3 -m venv venv
 
-    source venv/bin/activate (Linux/macOS) or venv\Scripts\activate (Windows)
+(Linux/macOS)
+
+    source venv/bin/activate 
+(Windows)
+
+    venv\Scripts\activate 
 
     pip install -r requirements.txt
 
