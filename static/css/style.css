@@ -1,0 +1,11 @@
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f7fb;color:#222}
+.topbar{background:linear-gradient(90deg,#0f6bdc,#2bb7f6);color:white;padding:18px 24px}
+.topbar h1{margin:0;font-size:20px}
+.container{display:flex;gap:20px;padding:20px}
+.left{flex:2}
+.right{flex:1;background:white;padding:12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+.controls{margin-top:8px;background:#fff;padding:10px;border-radius:6px;border:1px solid #e6eefc}
+label{display:block;margin-bottom:8px;font-size:14px}
+#complaintsList{list-style:none;padding:0;margin:0}
+#complaintsList li{padding:8px;border-bottom:1px solid #eee}
+.footer{text-align:center;padding:12px;font-size:13px;color:#666}
