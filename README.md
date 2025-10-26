@@ -12,7 +12,7 @@ Unzip and cd into the project folder.
 (Windows)
 
     venv\Scripts\activate 
-
+then:
     pip install -r requirements.txt
 
     python app.py
